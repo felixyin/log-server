@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <title>Logs</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <style>
+    html, body, .full-height {
+      height: 100%;
+    }
+
+    .stream {
+      overflow-y: scroll;
+      font-size: .8em;
+    }
+  </style>
+</head>
+<body style="display: flex;flex-direction: column;">
+<div style="flex:3;display: flex;">
+  <p>Logs:</p>
+  <pre class="stream" style="flex: 1;" id="logs-events"></pre>
+</div>
+<div style="flex:1;display:flex;">
+  <p>Error:</p>
+  <pre class="stream" style="flex:1;" id="errors-events"></pre>
+</div>
+ 
+<!--<script src="/js/socket.io.js"></script>-->
+<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+<script src="/js/client.js"></script>
+</body>
+</html>
